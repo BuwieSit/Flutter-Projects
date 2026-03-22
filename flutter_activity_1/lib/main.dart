@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_activity_1/views/for_you_screen.dart';
 import 'package:flutter_activity_1/views/item_screen.dart';
+import 'package:flutter_activity_1/views/landing_screen.dart';
 import 'package:flutter_activity_1/views/profile_screen.dart';
 import 'package:flutter_activity_1/views/access_screen.dart';
 import 'package:flutter_activity_1/views/bag_screen.dart';
@@ -12,7 +13,8 @@ void main() {
 
 final _router = GoRouter(
   routes: [
-    GoRoute(path: '/', builder: (context, state) => const ForYouScreen()),
+    GoRoute(path: '/', builder: (context, state) => const LandingScreen()),
+    GoRoute(path: '/for-you', builder: (context, state) => const ForYouScreen()),
     GoRoute(path: '/access', builder: (context, state) => const AccessScreen()),
     GoRoute(path: '/profile', builder: (context, state) => const ProfileScreen()),
     GoRoute(path: '/my-bag', builder: (context, state) => const BagScreen()),
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
           primaryColorDark: Color(0xFF934B00),
           scaffoldBackgroundColor: const Color(0xFF210F04),
           appBarTheme: const AppBarTheme(
-            backgroundColor: Color(0xFFBB6B00), // or your CustomAppBar color
+            backgroundColor: Color(0xFFBB6B00),
           ),
 
         ),

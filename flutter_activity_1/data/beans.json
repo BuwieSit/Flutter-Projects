@@ -1,0 +1,9 @@
+{
+    "beans1": {
+        "beans_id": 1,
+        "product_name": "Coconut Coffee Roasted Beans",
+        "owner": "Viet Ca Phe",
+        "Location": "Marikina, Metro Manila",
+        "Price": 500.00
+    }
+}

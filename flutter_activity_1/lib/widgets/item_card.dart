@@ -20,15 +20,16 @@ class ItemCard extends StatelessWidget {
     return SizedBox(
       height: 100,
       child: Card(
-        color: Colors.blue,
+        color: Colors.transparent,
         elevation: 4,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
         child: Padding(
           padding: const EdgeInsets.all(8),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               itemImage != null
                   ? Image.asset(
@@ -38,10 +39,10 @@ class ItemCard extends StatelessWidget {
                       fit: BoxFit.cover,
                     )
                   : const Icon(Icons.image, size: 50, color: Colors.white),
-              const SizedBox(width: 8),
               Expanded(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       itemName ?? '-',
@@ -49,7 +50,7 @@ class ItemCard extends StatelessWidget {
                           color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      '\$${itemPrice?.toString() ?? '-'}',
+                      '\$${itemPrice?.toString() ?? ' -'}',
                       style: const TextStyle(color: Colors.white70),
                     ),
                   ],

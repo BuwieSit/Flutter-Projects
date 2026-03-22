@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar ({super.key});
@@ -12,19 +13,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
 
             children: [
-                Image.asset(
-                  'assets/images/logo_no_bg.png',
-                  width: 50,
-                  fit: BoxFit.contain,
-                ),
                 Text(
-                  "App name",
+                  "Coffeelivery",
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.white
                   ),
                 ),
-                Icon(Icons.search, color: Colors.white,)
+                HugeIcon(
+                  icon: HugeIcons.strokeRoundedSearch01, 
+                  color: Theme.of(context).primaryColor,
+                )
 
             ],
           )

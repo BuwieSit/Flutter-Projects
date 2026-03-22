@@ -14,7 +14,8 @@ class BottomNavBar extends StatelessWidget  {
     return 
       BottomNavigationBar(
           backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
-          selectedItemColor: Theme.of(context).primaryColorLight,
+          
+          selectedItemColor: Colors.white,
           selectedLabelStyle: TextStyle(
             fontWeight: FontWeight.w900,
             fontSize: 13,
@@ -27,7 +28,7 @@ class BottomNavBar extends StatelessWidget  {
           onTap: (index) {
             switch (index) {
               case 0:
-                GoRouter.of(context).go('/');
+                GoRouter.of(context).go('/for-you');
                 break;
               case 1:
                 GoRouter.of(context).go('/my-bag');
@@ -41,7 +42,12 @@ class BottomNavBar extends StatelessWidget  {
             BottomNavigationBarItem(
               icon: HugeIcon(
                 icon: HugeIcons.strokeRoundedHome07,
-                color: Theme.of(context).primaryColorLight,
+                color: Theme.of(context).primaryColor,
+                size: iconSize,
+              ),
+              activeIcon: HugeIcon(
+                icon: HugeIcons.strokeRoundedHome07,
+                color: Colors.white, 
                 size: iconSize,
               ),
               label: "For You",
@@ -50,7 +56,12 @@ class BottomNavBar extends StatelessWidget  {
             BottomNavigationBarItem(
               icon: HugeIcon(
                 icon: HugeIcons.strokeRoundedShoppingBag01,
-                color: Theme.of(context).primaryColorLight,
+                color: Theme.of(context).primaryColor,
+                size: iconSize,
+              ),
+              activeIcon: HugeIcon(
+                icon: HugeIcons.strokeRoundedShoppingBag01,
+                color: Colors.white,
                 size: iconSize,
               ),
               label: "My Bag",
@@ -59,7 +70,12 @@ class BottomNavBar extends StatelessWidget  {
             BottomNavigationBarItem(
               icon: HugeIcon(
                 icon: HugeIcons.strokeRoundedUser,
-                color: Theme.of(context).primaryColorLight,
+                color: Theme.of(context).primaryColor,
+                size: iconSize,
+              ),
+              activeIcon: HugeIcon(
+                icon: HugeIcons.strokeRoundedUser,
+                color: Colors.white, // 👈 selected color
                 size: iconSize,
               ),
               label: "Profile",
