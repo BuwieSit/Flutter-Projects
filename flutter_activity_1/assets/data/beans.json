@@ -1,0 +1,66 @@
+{
+    "beans1": {
+        "beans_id": 1,
+        "product_name": "Coconut Coffee Roasted Beans",
+        "shop_name": "Viet Ca Phe",
+        "location": "Marikina, Metro Manila",
+        "image": "assets/images/coconut.png",
+        "price": 500.00
+    },
+    "beans2": {
+        "beans_id": 2,
+        "product_name": "Egg Coffee Powder",
+        "shop_name": "Hanoi Brew",
+        "location": "Quezon City, Metro Manila",
+        "image": "assets/images/egg.png",
+        "price": 320.00
+    },
+    "beans3": {
+        "beans_id": 3,
+        "product_name": "Dark Roast Barako Beans",
+        "shop_name": "Kapeng Barako Co.",
+        "location": "Batangas, Philippines",
+        "image": "assets/images/barako.png",
+        "price": 280.00
+    },
+    "beans4": {
+        "beans_id": 4,
+        "product_name": "Vietnamese Drip Coffee Blend",
+        "shop_name": "Saigon Select",
+        "location": "Pasig, Metro Manila",
+        "image": "assets/images/vietnamese.png",
+        "price": 450.00
+    },
+    "beans5": {
+        "beans_id": 5,
+        "product_name": "Hazelnut Arabica Beans",
+        "shop_name": "Brew Haven",
+        "location": "Taguig, Metro Manila",
+        "image": "assets/images/hazelnut.png",
+        "price": 390.00
+    },
+    "beans6": {
+        "beans_id": 6,
+        "product_name": "Premium Robusta Beans",
+        "shop_name": "Highland Coffee PH",
+        "location": "Baguio, Benguet",
+        "image": "assets/images/robusta.png",
+        "price": 350.00
+    },
+    "beans7": {
+        "beans_id": 7,
+        "product_name": "Caramel Macchiato Beans",
+        "shop_name": "Sweet Brew",
+        "location": "Makati, Metro Manila",
+        "image": "assets/images/caramel.png",
+        "price": 420.00
+    },
+    "beans8": {
+        "beans_id": 8,
+        "product_name": "Tsokolate de Batirol Mix",
+        "shop_name": "Cacao Traditions",
+        "location": "San Juan, Metro Manila",
+        "image": "assets/images/tsokolate.png",
+        "price": 260.00
+    }
+}

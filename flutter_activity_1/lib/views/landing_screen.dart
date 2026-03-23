@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_activity_1/widgets/button.dart';
+import 'package:go_router/go_router.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen ({super.key});
@@ -7,20 +9,25 @@ class LandingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Colors.white,
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
-        child: SingleChildScrollView(
-          child: Column(
+
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            spacing: 15,
             children: [
-              Text("Landing Page", style: TextStyle(color: Colors.white),)
+              Image.asset('assets/images/logo_no_bg.png', width: 200, fit: BoxFit.contain,),
+              Text("Coffeelivery", 
+                style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 30),
+              ),
+              CustomButton(text: "Shop Now!", onPressed: () => {context.go('/access')},)
             ]
             
           ),
         ),
-      ),
-
-    );
+      );
   }
 }

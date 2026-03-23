@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_activity_1/widgets/custom_text_field.dart';
 import 'package:flutter_activity_1/widgets/button.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -58,6 +59,7 @@ class LoginFormState extends State<LoginForm> {
                   final usernameOrEmail = _userController.text;
                   final password = _passwordController.text;
                   print('Login: $usernameOrEmail / $password');
+                  context.go('/for-you');
                 }
               },
             ),

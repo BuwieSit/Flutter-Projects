@@ -24,12 +24,12 @@ class _AccessScreenState extends State<AccessScreen> {
           children: [
             Image.asset(
               'assets/images/logo_no_bg.png',
-              width: 150,
+              width: 100,
               fit: BoxFit.contain,
             ),
             const SizedBox(height: 20),
 
-            // Dynamic title
+            
             Text(
               isLogin ? "Login" : "Register",
               style: const TextStyle(
@@ -40,7 +40,7 @@ class _AccessScreenState extends State<AccessScreen> {
 
             const SizedBox(height: 20),
 
-            // Dynamic form
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 32),
               child: isLogin

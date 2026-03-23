@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_activity_1/widgets/bottom_nav_bar.dart';
 import 'package:flutter_activity_1/widgets/custom_app_bar.dart';
 
 class ItemScreen extends StatelessWidget {
